@@ -1,0 +1,27 @@
+{
+  "name": "react-webpack-babel",
+  "version": "1.0.0",
+  "description": "Example build reactjs project using webpack and babel",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lequangphuong/react-webpack-babel.git"
+  },
+  "keywords": [
+    "react",
+    "webpack",
+    "babel"
+  ],
+  "author": "le quang phuong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lequangphuong/react-webpack-babel/issues"
+  },
+  "homepage": "https://github.com/lequangphuong/react-webpack-babel#readme",
+  "devDependencies": {
+    "webpack": "^1.13.1"
+  }
+}
