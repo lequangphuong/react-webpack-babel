@@ -5,6 +5,8 @@
 import React from 'react';
 import {render} from 'react-dom';
 
+require('./main.less');
+
 import Hello from './hello';
 
 class App extends React.Component {

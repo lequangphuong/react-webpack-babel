@@ -11,7 +11,7 @@ const PATHS = {
 var config = {
     entry: PATHS.src + '/main.jsx',
     resolve: {
-        extensions: ['','.js', '.jsx']
+        extensions: ['','.js', '.jsx', '.less', '.css']
     },
     output: {
         path: PATHS.build,
@@ -23,6 +23,10 @@ var config = {
                 test : /\.jsx?/,
                 include : PATHS.src,
                 loader : 'babel'
+            },
+            {
+                test: /\.less$/,
+                loader: "style!css!less"
             }
         ]
     },
@@ -41,7 +45,12 @@ var config = {
                 'NODE_ENV': JSON.stringify('production')
             }
         }),
-        new webpack.optimize.UglifyJsPlugin({minimize: true})
+        new webpack.optimize.UglifyJsPlugin({
+            compress:{
+                warnings: true
+            },
+            minimize: true
+        })
     ]
 };
 

@@ -6,7 +6,7 @@ class Hello extends React.Component {
     }
     render() {
         return (
-            <div> Hello from another jsx</div>
+            <div className="hello"> Hello from another jsx</div>
         )
     }
 }
